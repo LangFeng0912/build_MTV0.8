@@ -5,7 +5,9 @@ setup(
     version='0.1',
     packages=find_packages(),
     install_requires=[
-        # List your project's dependencies here
+        'GitPython',
+        'pandas',
+        'requests'
     ],
     entry_points={
         'console_scripts': [
