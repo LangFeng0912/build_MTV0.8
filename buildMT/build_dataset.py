@@ -1,9 +1,9 @@
 '''
 This script use to build dataset for libsa4py
 '''
-from collector import collect
-from cloner import clone_projects
-from deduplicate import deduplicate_files
+from buildMT.collector import collect
+from buildMT.cloner import clone_projects
+from buildMT.deduplicate import deduplicate_files
 
 
 def build():
