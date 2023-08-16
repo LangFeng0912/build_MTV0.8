@@ -26,7 +26,7 @@ docker build -t libsa4py .
 
 ### run docker
 ```
-docker run -it -v [source]:/raw_projects -v [result]:results libsa4py 
+docker run -it -v [source]:/raw_projects -v [result]:/results libsa4py 
 ```
 > `[source]` refers the location for the raw dataset in the local machine, 
 > for example: `raw_projects`
