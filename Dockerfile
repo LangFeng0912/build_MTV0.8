@@ -41,7 +41,7 @@ RUN pip install virtualenvwrapper
 # mkvirtualenv myenv
 # workon myenv
 
-#install pyre
+# install pyre
 RUN git clone https://github.com/facebook/pyre-check.git
 
 RUN pip install --upgrade pip
@@ -57,3 +57,8 @@ RUN python3 -c "import nltk; nltk.download('stopwords')"
 RUN python3 -c "import nltk; nltk.download('wordnet')"
 RUN python3 -c "import nltk; nltk.download('omw-1.4')"
 RUN python3 -c "import nltk; nltk.download('averaged_perceptron_tagger')"
+
+
+# install buildMT
+RUN git clone https://github.com/LangFeng0912/build_MTV0.8.git
+RUN pip install -e build_MTV0.8/

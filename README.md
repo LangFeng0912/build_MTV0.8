@@ -11,7 +11,7 @@ pip install -e build_MTV0.8/
 ```
 ### collect raw dataset
 ```python
-buildmt
+buildmt build
 ```
 
 ## data process & Augmentation
