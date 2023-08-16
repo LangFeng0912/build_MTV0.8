@@ -14,7 +14,7 @@ pip install -e build_MTV0.8/
 buildmt build
 ```
 
-## data process & Augmentation (Docker)
+## Data Process & Augmentation (Docker)
 requires Ubuntu version ubuntu 20 or newer, based on Libsa4Py
 ### build docker image
 ```
@@ -23,7 +23,7 @@ docker build -t libsa4py .
 
 ### run docker
 ```
-docker run -it -v [source]:/data/source -v [result]:/data/results libsa4py 
+docker run -it -v [source]:/raw_projects -v [result]:results libsa4py 
 ```
 > `[source]` refers the location for the raw dataset in the local machine, 
 > for example: `raw_projects`
@@ -38,9 +38,14 @@ dpkg -i watchman_ubuntu20.04_v2022.12.12.00.deb
 apt-get -f -y install
 watchman version
 ```
+### collect raw projects
+```python
+buildmt build
+```
+
 
 ### run libsa4py with pyre options
 ```python
-cd data
-libsa4py process --p source --o results --pyre
+source py38/bin/activate
+libsa4py process --p raw_projects --o results --pyre
 ```

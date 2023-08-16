@@ -34,12 +34,9 @@ RUN wget https://github.com/facebook/watchman/releases/download/v2022.12.12.00/w
 # RUN apt-get -f -y install
 # RUN watchman version
 
-RUN pip install virtualenvwrapper
-# export WORKON_HOME=.virtualenvs
-# export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-# source /usr/local/bin/virtualenvwrapper.sh
-# mkvirtualenv myenv
-# workon myenv
+RUN apt install -y python3.8-venv
+RUN python3 -m venv py38
+RUN /bin/bash -c "source py38/bin/activate"
 
 # install pyre
 RUN git clone https://github.com/facebook/pyre-check.git
