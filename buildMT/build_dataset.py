@@ -6,7 +6,7 @@ from cloner import clone_projects
 from deduplicate import deduplicate_files
 
 
-def main():
+def build():
     json_name = "dataset.json"
     org_path = "raw_projects"
     collect(json_name)
@@ -15,4 +15,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    build()
