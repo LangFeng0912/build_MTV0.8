@@ -11,10 +11,13 @@ pip install -e build_MTV0.8/
 ```
 ### collect raw dataset
 ```python
-buildmt build
+buildmt build --p raw_projects --l 200
 ```
+> `[p]` refers the location to collect the raw dataset : `raw_projects`
+> 
+> `[l]` refers the numbers you want to collect
 
-## Data Process & Augmentation (Docker)
+# Docker Image
 requires Ubuntu version ubuntu 20 or newer, based on Libsa4Py
 ### build docker image
 ```
@@ -38,14 +41,18 @@ dpkg -i watchman_ubuntu20.04_v2022.12.12.00.deb
 apt-get -f -y install
 watchman version
 ```
-### collect raw projects
+
+### activate vitrual environment
 ```python
-buildmt build
+source py38/bin/activate
 ```
 
+### collect raw projects
+```python
+buildmt build --p raw_projects --l 200
+```
 
 ### run libsa4py with pyre options
 ```python
-source py38/bin/activate
 libsa4py process --p raw_projects --o results --pyre
 ```
