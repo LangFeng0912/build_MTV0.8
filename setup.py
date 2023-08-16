@@ -11,7 +11,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'buildmt = buildMT.buildmt:main'
+            'buildmt = buildMT.buildmt_main:main'
         ],
     },
 )
