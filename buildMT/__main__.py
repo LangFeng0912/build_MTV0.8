@@ -1,6 +1,8 @@
 from argparse import ArgumentParser
 from buildMT.build_dataset import build
 
+def build_main(args):
+    build()
 
 def main():
 
@@ -8,7 +10,7 @@ def main():
     sub_parsers = arg_parser.add_subparsers(dest='cmd')
 
     build_parser = sub_parsers.add_parser('build')
-    build_parser.set_defaults(func=build)
+    build_parser.set_defaults(func=build_main)
 
     args = arg_parser.parse_args()
     args.func(args)

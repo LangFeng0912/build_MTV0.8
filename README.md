@@ -14,7 +14,7 @@ pip install -e build_MTV0.8/
 buildmt build
 ```
 
-## data process & Augmentation
+## data process & Augmentation (Docker)
 requires Ubuntu version ubuntu 20 or newer, based on Libsa4Py
 ### build docker image
 ```
