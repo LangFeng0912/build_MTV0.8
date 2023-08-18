@@ -35,12 +35,17 @@ docker run -it -v [source]:/raw_projects -v [result]:/results libsa4py
 > for example: `processed_projects`
 
 
-### install watchman manually
-```python
-dpkg -i watchman_ubuntu20.04_v2022.12.12.00.deb
-apt-get -f -y install
-watchman version
-```
+[//]: # (### install watchman manually)
+
+[//]: # (```python)
+
+[//]: # (dpkg -i watchman_ubuntu20.04_v2022.12.12.00.deb)
+
+[//]: # (apt-get -f -y install)
+
+[//]: # (watchman version)
+
+[//]: # (```)
 
 ### activate vitrual environment
 ```python
