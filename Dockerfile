@@ -36,9 +36,9 @@ RUN dpkg -i watchman_ubuntu20.04_v2022.12.12.00.deb
 RUN apt-get -f -y install
 RUN watchman version
 
-RUN apt install -y python3.8-venv
-RUN python3 -m venv py38
-RUN /bin/bash -c "source py38/bin/activate"
+# RUN apt install -y python3.8-venv
+# RUN python3 -m venv py38
+# RUN /bin/bash -c "source py38/bin/activate"
 
 # install pyre
 RUN git clone https://github.com/facebook/pyre-check.git
@@ -60,4 +60,4 @@ RUN python3 -c "import nltk; nltk.download('averaged_perceptron_tagger')"
 
 # install buildMT
 RUN git clone https://github.com/LangFeng0912/build_MTV0.8.git
-RUN pip install -e build_MTV0.8/
+RUN pip install build_MTV0.8/
