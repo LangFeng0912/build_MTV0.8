@@ -62,7 +62,7 @@ RUN python3 -c "import nltk; nltk.download('averaged_perceptron_tagger')"
 RUN git clone https://github.com/LangFeng0912/build_MTV0.8.git
 RUN pip install build_MTV0.8/
 
-WORKDIR /
-COPY build_dataset.sh /
-RUN chmod +x build_dataset.sh
-ENTRYPOINT ["build_dataset.sh"]
+WORKDIR /shdir
+COPY build_dataset.sh /shdir
+RUN chmod +x /shdir/build_dataset.sh
+ENTRYPOINT ["/shdir/build_dataset.sh"]
