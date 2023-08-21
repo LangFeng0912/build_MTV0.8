@@ -17,7 +17,7 @@ buildmt build --p raw_projects --l 200
 > 
 > `[--l]` refers the numbers you want to collect
 > 
-> `[--p]` Whether to collect repos from Github [Optional, default=False]
+> `[--c]` Whether to collect repos from Github [Optional, default=False]
 
 
 # Docker Image
