@@ -4,6 +4,8 @@ This script use to build dataset for libsa4py
 from buildMT.collector import collect
 from buildMT.cloner import clone_projects
 from buildMT.deduplicate import deduplicate_files
+import importlib.resources
+
 
 
 def build(org_path, collect_repo, limit = 200):
@@ -16,7 +18,8 @@ def build(org_path, collect_repo, limit = 200):
         deduplicate_files(org_path)
     else:
         print("Using default dataset json: dataset_list")
-        clone_projects("dataset_list.json", org_path, limit)
+        default_json = importlib.resources.files(__name__) / 'dataset_list.json'
+        clone_projects(default_json, org_path, limit)
         deduplicate_files(org_path)
 
 
