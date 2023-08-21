@@ -49,7 +49,7 @@ RUN pip install setuptools-rust
 # install libsa4py
 RUN git clone -b dev-lang https://github.com/saltudelft/libsa4py.git
 RUN pip install -r libsa4py/requirements.txt
-RUN pip install -e libsa4py/
+RUN pip install libsa4py/
 
 
 RUN python3 -c "import nltk; nltk.download('stopwords')"

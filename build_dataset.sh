@@ -22,4 +22,4 @@ done
 echo "Dataset is build based on : $LIM projects"
 
 buildmt build --p raw_projects --l $LIM
-libsa4py process --p raw_projects --o results --pyre
+libsa4py process --p raw_projects --o results --pyre --j 4

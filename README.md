@@ -65,5 +65,5 @@ buildmt build --p raw_projects --l 200
 
 ### run libsa4py with pyre options
 ```python
-libsa4py process --p raw_projects --o results --pyre
+libsa4py process --p raw_projects --o results --pyre --j 4
 ```
