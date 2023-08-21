@@ -19,6 +19,13 @@ buildmt build --p raw_projects --l 200
 > 
 > `[--c]` Whether to collect repos from Github [Optional, default=False]
 
+### split raw dataset
+```python
+buildmt split --p raw_projects 
+```
+> `[--p]` refers the location to collect the raw dataset : `raw_projects`
+> 
+> 
 
 # Docker Image
 requires Ubuntu version ubuntu 20 or newer, based on Libsa4Py
@@ -29,7 +36,7 @@ docker build -t libsa4py .
 
 ### run docker
 ```
-docker run -it -v [result]:/results libsa4py 
+docker run -v [result]:/results libsa4py --l 32 
 ```
 > `[source]` refers the location for the raw dataset in the local machine, 
 > for example: `raw_projects`
@@ -58,12 +65,19 @@ docker run -it -v [result]:/results libsa4py
 
 [//]: # (```)
 
-### collect raw projects
-```python
-buildmt build --p raw_projects --l 200
-```
+[//]: # (### collect raw projects)
 
-### run libsa4py with pyre options
-```python
-libsa4py process --p raw_projects --o results --pyre --j 4
-```
+[//]: # (```python)
+
+[//]: # (buildmt build --p raw_projects --l 200)
+
+[//]: # (```)
+
+[//]: # ()
+[//]: # (### run libsa4py with pyre options)
+
+[//]: # (```python)
+
+[//]: # (libsa4py process --p raw_projects --o results --pyre --j 4)
+
+[//]: # (```)
