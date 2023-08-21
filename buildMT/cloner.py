@@ -4,8 +4,9 @@ import os
 from git.repo import Repo
 
 # clone the repos from Github
-def clone(path, filename):
+def clone(path, filename, l):
     df = pd.read_json(filename, encoding="utf-8", orient='records')
+    df = df[:l]
     rows = df.shape[0]
     print("%d repositoies from the json file have been readed" % rows)
     orient_dir = path
@@ -50,6 +51,6 @@ def preprocess(path):
 
     clean_nopy(path)
 
-def clone_projects(jsonfile, path):
-    clone(path, jsonfile)
+def clone_projects(jsonfile, path, limit):
+    clone(path, jsonfile, limit)
     preprocess(path)
