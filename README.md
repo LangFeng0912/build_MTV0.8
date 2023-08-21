@@ -13,9 +13,12 @@ pip install -e build_MTV0.8/
 ```python
 buildmt build --p raw_projects --l 200
 ```
-> `[p]` refers the location to collect the raw dataset : `raw_projects`
+> `[--p]` refers the location to collect the raw dataset : `raw_projects`
 > 
-> `[l]` refers the numbers you want to collect
+> `[--l]` refers the numbers you want to collect
+> 
+> `[--p]` Whether to collect repos from Github [Optional, default=False]
+
 
 # Docker Image
 requires Ubuntu version ubuntu 20 or newer, based on Libsa4Py
@@ -26,7 +29,7 @@ docker build -t libsa4py .
 
 ### run docker
 ```
-docker run -it -v [source]:/raw_projects -v [result]:/results libsa4py 
+docker run -it -v [result]:/results libsa4py 
 ```
 > `[source]` refers the location for the raw dataset in the local machine, 
 > for example: `raw_projects`
@@ -47,10 +50,13 @@ docker run -it -v [source]:/raw_projects -v [result]:/results libsa4py
 
 [//]: # (```)
 
-### activate vitrual environment
-```python
-source py38/bin/activate
-```
+[//]: # (### activate vitrual environment)
+
+[//]: # (```python)
+
+[//]: # (source py38/bin/activate)
+
+[//]: # (```)
 
 ### collect raw projects
 ```python
