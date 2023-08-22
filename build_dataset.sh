@@ -29,5 +29,5 @@ echo "Projects download and preprocess finished, start libSA4Py process"
 buildmt split --p raw_projects
 echo "Projects splitted ..."
 
-libsa4py process --p raw_projects --o results --pyre --j 8
+libsa4py process --p raw_projects --o results --s dataset_split.csv --pyre --j 8
 echo "Projects processed finished"
