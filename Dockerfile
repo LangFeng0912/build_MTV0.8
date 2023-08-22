@@ -57,9 +57,11 @@ RUN python3 -c "import nltk; nltk.download('wordnet')"
 RUN python3 -c "import nltk; nltk.download('omw-1.4')"
 RUN python3 -c "import nltk; nltk.download('averaged_perceptron_tagger')"
 
+RUN pip install scikit-learn
 
 # install buildMT
 RUN git clone https://github.com/LangFeng0912/build_MTV0.8.git
+RUN pip install -r build_MTV0.8/requirements.txt
 RUN pip install build_MTV0.8/
 
 WORKDIR /shdir

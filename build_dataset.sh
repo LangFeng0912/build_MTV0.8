@@ -26,5 +26,8 @@ cd ..
 buildmt build --p raw_projects --l $LIM
 echo "Projects download and preprocess finished, start libSA4Py process"
 
-libsa4py process --p raw_projects --o results --pyre --j 4
+buildmt split --p raw_projects
+echo "Projects splitted ..."
+
+libsa4py process --p raw_projects --o results --pyre --j 8
 echo "Projects processed finished"
