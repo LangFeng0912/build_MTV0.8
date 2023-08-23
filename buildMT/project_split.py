@@ -57,13 +57,14 @@ def split_projects(p_dir, csv_path):
     df_valid = label_file(p_dir, repo_df_valid, "valid")
     df_test = label_file(p_dir, repo_df_test, "test")
 
+
     # Write recombined output
     print("Combining train, test & validation into dataframe")
     result_df = pd.concat([df_train, df_test, df_valid])
 
     print("Writing dataframe to:", csv_path)
     result_df.to_csv(csv_path, header=False, index=False, encoding=sys.getfilesystemencoding())
-
+    repo_df_test.to_csv("test_repo.csv", header=False, index=False, encoding=sys.getfilesystemencoding())
 
 
 
