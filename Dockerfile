@@ -47,7 +47,8 @@ RUN pip install --upgrade pip
 RUN pip install setuptools-rust
 
 # install libsa4py
-RUN git clone -b dev-lang https://github.com/saltudelft/libsa4py.git
+# RUN git clone -b dev-lang https://github.com/saltudelft/libsa4py.git
+RUN git clone https://github.com/LangFeng0912/libsa4py.git
 RUN pip install -r libsa4py/requirements.txt
 RUN pip install libsa4py/
 
