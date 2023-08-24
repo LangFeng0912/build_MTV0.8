@@ -154,13 +154,6 @@
       "forks": 74
     },
     {
-      "author": "spulec",
-      "repo": "moto",
-      "repoUrl": "https://github.com/spulec/moto",
-      "stars": 6163,
-      "forks": 1734
-    },
-    {
       "author": "long2ice",
       "repo": "rearq",
       "repoUrl": "https://github.com/long2ice/rearq",
@@ -13340,6 +13333,13 @@
       "repoUrl": "https://github.com/RTIInternational/gobbli",
       "stars": 269,
       "forks": 23
+    },
+    {
+      "author": "spulec",
+      "repo": "moto",
+      "repoUrl": "https://github.com/spulec/moto",
+      "stars": 6163,
+      "forks": 1734
     },
     {
       "author": "lidatong",
