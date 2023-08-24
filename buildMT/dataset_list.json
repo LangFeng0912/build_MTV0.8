@@ -126,13 +126,6 @@
       "forks": 129
     },
     {
-      "author": "sentinel-hub",
-      "repo": "eo-learn",
-      "repoUrl": "https://github.com/sentinel-hub/eo-learn",
-      "stars": 931,
-      "forks": 272
-    },
-    {
       "author": "cleder",
       "repo": "fastkml",
       "repoUrl": "https://github.com/cleder/fastkml",
@@ -14005,6 +13998,13 @@
       "repoUrl": "https://github.com/pandas-dev/pandas",
       "stars": 35643,
       "forks": 15218
+    },
+    {
+      "author": "sentinel-hub",
+      "repo": "eo-learn",
+      "repoUrl": "https://github.com/sentinel-hub/eo-learn",
+      "stars": 931,
+      "forks": 272
     },
     {
       "author": "yampelo",
