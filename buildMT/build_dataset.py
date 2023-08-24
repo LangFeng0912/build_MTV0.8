@@ -8,18 +8,18 @@ import importlib.resources
 
 
 
-def build(org_path, collect_repo, limit = 200):
+def build(org_path, jobs, collect_repo, limit = 200):
 
     if collect_repo:
         print("Not using default dataset json, collecting dataset list...")
         json_name = "dataset.json"
         collect(json_name, limit)
-        clone_projects(json_name, org_path, limit)
+        clone_projects(json_name, org_path, jobs, limit)
         deduplicate_files(org_path)
     else:
         print("Using default dataset json: dataset_list")
         default_json_path = "build_MTV0.8/buildMT/dataset_list.json"
-        clone_projects(default_json_path, org_path, limit)
+        clone_projects(default_json_path, org_path, jobs, limit)
         deduplicate_files(org_path)
 
 

@@ -1,13 +1,14 @@
 from argparse import ArgumentParser
 from buildMT.build_dataset import build
 from buildMT.project_split import split_projects
+from multiprocessing import cpu_count
 
 def build_main(args):
     if args.l:
         collect_limit = args.l
-        build(args.p, args.collect_repo, collect_limit)
+        build(args.p, args.j, args.collect_repo, collect_limit)
     else:
-        build(args.p, args.collect_repo)
+        build(args.p, args.j, args.collect_repo)
 
 def split_main(args):
     split_projects(args.p, args.csv)
@@ -20,7 +21,9 @@ def main():
     build_parser = sub_parsers.add_parser('build')
     build_parser.add_argument("--p", required=True, type=str, help="Path to Python projects")
     build_parser.add_argument("--l", required=False, type=int, help="Number of projects to collect")
+    build_parser.add_argument("--j", default=cpu_count(), type=int, help="Number of workers for processing projects")
     build_parser.add_argument("--collect", dest='collect_repo', action='store_true', help="Whether to collect repos from Github")
+
 
     build_parser.set_defaults(collect_repo=False)
     build_parser.set_defaults(func=build_main)
