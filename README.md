@@ -36,13 +36,17 @@ docker build -t libsa4py .
 
 ### run docker
 ```
-docker run -v [result]:/results libsa4py -l 32 
+docker run -v [result]:/results libsa4py -l 32 -j 8
 ```
 > `[source]` refers the location for the raw dataset in the local machine, 
 > for example: `raw_projects`
 >
 > `[result]` refers the location for the processed dataset in the local machine,
 > for example: `processed_projects`
+> 
+> `[--l]` refers the number of projects to download
+> 
+> `[--j]` refers the number of processors to use parallel
 
 
 [//]: # (### install watchman manually)
