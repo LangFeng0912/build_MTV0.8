@@ -154,13 +154,6 @@
       "forks": 2931
     },
     {
-      "author": "databand-ai",
-      "repo": "dbnd",
-      "repoUrl": "https://github.com/databand-ai/dbnd",
-      "stars": 235,
-      "forks": 26
-    },
-    {
       "author": "py-sherlock",
       "repo": "sherlock",
       "repoUrl": "https://github.com/py-sherlock/sherlock",
@@ -15713,6 +15706,13 @@
       "repoUrl": "https://github.com/mcbeet/beet",
       "stars": 80,
       "forks": 9
+    },
+    {
+      "author": "databand-ai",
+      "repo": "dbnd",
+      "repoUrl": "https://github.com/databand-ai/dbnd",
+      "stars": 235,
+      "forks": 26
     },
     {
       "author": "fannheyward",
