@@ -7,7 +7,8 @@ collect & download & deduplicate the dataset
 ### install buildmt
 ```python
 git clone https://github.com/LangFeng0912/build_MTV0.8.git
-pip install -e build_MTV0.8/
+pip install -r build_MTV0.8/requirements.txt
+pip install build_MTV0.8/
 ```
 ### collect raw dataset
 ```python
