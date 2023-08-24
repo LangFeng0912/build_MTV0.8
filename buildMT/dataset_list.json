@@ -119,13 +119,6 @@
       "forks": 21
     },
     {
-      "author": "NixOS",
-      "repo": "nixpkgs",
-      "repoUrl": "https://github.com/NixOS/nixpkgs",
-      "stars": 10576,
-      "forks": 8561
-    },
-    {
       "author": "marcusbuffett",
       "repo": "command-line-chess",
       "repoUrl": "https://github.com/marcusbuffett/command-line-chess",
@@ -12234,6 +12227,13 @@
       "repoUrl": "https://github.com/altair-viz/altair_viewer",
       "stars": 54,
       "forks": 8
+    },
+    {
+      "author": "NixOS",
+      "repo": "nixpkgs",
+      "repoUrl": "https://github.com/NixOS/nixpkgs",
+      "stars": 10576,
+      "forks": 8561
     },
     {
       "author": "Fatal1ty",
