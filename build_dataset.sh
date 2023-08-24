@@ -26,7 +26,7 @@ while [[ $# -gt 0 ]]; do
 done
 
 echo "Dataset is build based on : $LIM projects"
-echo "Dataset processed based on : $JOB processors"
+echo "Dataset processed based on : $JOB multi-processors"
 
 cd ..
 

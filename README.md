@@ -11,11 +11,13 @@ pip install -e build_MTV0.8/
 ```
 ### collect raw dataset
 ```python
-buildmt build --p raw_projects --l 200
+buildmt build --p raw_projects --l 200 --j 4
 ```
 > `[--p]` refers the location to collect the raw dataset : `raw_projects`
 > 
-> `[--l]` refers the numbers you want to collect
+> `[--l]` refers the numbers of project you want to collect
+> 
+>  `[--j]` refers the numbers of multi-processors
 > 
 > `[--c]` Whether to collect repos from Github [Optional, default=False]
 
