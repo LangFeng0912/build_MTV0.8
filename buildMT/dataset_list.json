@@ -126,13 +126,6 @@
       "forks": 129
     },
     {
-      "author": "felinae98",
-      "repo": "nonebot-bison",
-      "repoUrl": "https://github.com/felinae98/nonebot-bison",
-      "stars": 84,
-      "forks": 14
-    },
-    {
       "author": "sentinel-hub",
       "repo": "eo-learn",
       "repoUrl": "https://github.com/sentinel-hub/eo-learn",
@@ -13683,6 +13676,13 @@
       "repoUrl": "https://github.com/Curt-Park/rainbow-is-all-you-need",
       "stars": 1374,
       "forks": 278
+    },
+    {
+      "author": "felinae98",
+      "repo": "nonebot-bison",
+      "repoUrl": "https://github.com/felinae98/nonebot-bison",
+      "stars": 84,
+      "forks": 14
     },
     {
       "author": "ilevkivskyi",
