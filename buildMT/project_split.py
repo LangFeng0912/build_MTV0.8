@@ -64,7 +64,7 @@ def split_projects(p_dir, csv_path):
 
     print("Writing dataframe to:", csv_path)
     result_df.to_csv(csv_path, header=False, index=False, encoding=sys.getfilesystemencoding())
-    repo_df_test.to_csv("test_repo.csv", header=False, index=False, encoding=sys.getfilesystemencoding())
+    repo_df_test.to_csv("test_repo.csv", index=False, encoding=sys.getfilesystemencoding())
 
 
 
