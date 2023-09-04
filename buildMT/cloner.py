@@ -20,7 +20,7 @@ def clone(repo_data, orient_dir):
     print(f"Current downloading: {url}")
     print(repo_path)
     Repo.clone_from(url, to_path=repo_path)
-    print('Download Succeeded')
+    # print('Download Succeeded')
     time.sleep(1)
 
 # clean the non-py file
